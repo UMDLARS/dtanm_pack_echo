@@ -1,4 +1,4 @@
-# I can't hear you!
+# Echo Challenge
 
 The sloths and the eagles are at all-out war. The eagles control the skies and
 have managed to get the sloths completely surrounded. Now the sloths have
@@ -14,15 +14,6 @@ programmers tasked with writing the program to repeat everything said by the
 eagles. Your goal is to make sure that your program echoes exactly the input
 given under every condition.
 
-### Table of Contents
-
- - [The Game](#the-game)
-    - [Fixing Your Code and How to Submit](#fixing-your-code-and-how-to-submit)
-    - [Collecting Flaws](#collecting-flaws)
-    - [Scoring](#scoring)
- - [Desired Behavior](#desired-behavior)
- - [The Gold Standard](#the-gold-standard)
-
 ### THE GAME
 
 You are tasked with finding issues in the `echo` program and fixing them, while
@@ -37,12 +28,11 @@ input strings. Then, you can fix the flaws you discover in that program to
 make your version more robust. When you have a version of `echo` that you think
 is improved, you should push it up to be tested. 
 
-The program `submit` will compile your code. Then it will copy your source to the private directory /var/cctf/teamN/src/ and a binary will be copied to the public directory /var/cctf/teamN/bin/. The public binary can be tested by other teams to reveal the flaws in your code.
-
 ### Collecting Flaws
 
-Create tarballs of your attacks (format on the website) and submit them on the
-website.
+Once you have found a bug in the source provided, create an attack that will
+exploit this bug. Then, upload it on the "<a href="/attacks/submit">Submit
+an Attack</a>" page to have it run against each team's program.
 
 ### Scoring
 Your score is on the website, with a list of attacks you pass and attacks you
@@ -52,7 +42,7 @@ do not.
 Your program should print to `stdout` all arguments passed to the program.
 For example, running `./echo one two three` should print `one two three`.
 Given the way shells parse arguments, `./echo one     two three` should have
-the same result. However, `./echo "one      two three" should print the extra
+the same result. However, `./echo "one      two three"` should print the extra
 whitespace. 
 
 ### The Gold Standard
